@@ -1,21 +1,25 @@
 import "./globals.css";
 import Providers from "@/components/Providers";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "ElectroMart",
   icons: {
-    icon: "/icon.jpeg",
-    shortcut: "/icon.jpeg",
-    apple: "/icon.jpeg",
+    icon: "/icon2.png",
+    shortcut: "/icon2.png",
+    apple: "/icon2.png",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className="min-h-screen flex flex-col">
         <Providers>
-          {children}
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
         </Providers>
       </body>
     </html>

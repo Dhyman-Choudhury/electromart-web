@@ -1,0 +1,203 @@
+[
+  {
+    "id": "1",
+    "name": "Apple iPhone 15 Pro Max – 256GB – Black Titanium",
+    "images": ["/images/iphone15pro1.jpg","/images/iphone15pro2.jpg","/images/iphone15pro3.jpg"],
+    "price": 1099.99,
+    "original_price": 1199.99,
+    "description": "iPhone 15 Pro Max with 6.7-inch Super Retina XDR display, A17 Pro chip, and advanced triple-camera system.",
+    "specs": {
+      "Display": "6.7-inch Super Retina XDR OLED",
+      "Processor": "Apple A17 Pro",
+      "RAM": "8GB",
+      "Storage": "256GB",
+      "Camera": "Triple 48MP system",
+      "Battery": "Up to 28 hours video playback",
+      "OS": "iOS 17",
+      "Build": "Titanium frame with Ceramic Shield"
+    },
+    "reviews": {"rating": 4.5,"total": 1200},
+    "variants": ["Black Titanium","Blue Titanium","Natural Titanium","White Titanium"],
+    "shipping": "Free standard shipping on orders over $50. Returns within 30 days.",
+    "compare": ["iPhone 15 Pro","iPhone 14 Pro Max"]
+  },
+  {
+    "id": "2",
+    "name": "Samsung Galaxy S23 Ultra – 12GB – Phantom Black",
+    "images": ["/images/galaxyS23ultra1.jpg","/images/galaxyS23ultra2.jpg"],
+    "price": 1099.99,
+    "original_price": 1199.99,
+    "description": "High-end Android smartphone with S-Pen, Snapdragon 8 Gen 2, and 200MP camera system.",
+    "specs": {
+      "Display": "6.8-inch AMOLED",
+      "Processor": "Snapdragon 8 Gen 2",
+      "RAM": "12GB",
+      "Storage": "256GB",
+      "Camera": "200MP quad system",
+      "Battery": "5000mAh",
+      "OS": "Android 13",
+      "Build": "Aluminum frame with Gorilla Glass"
+    },
+    "reviews": {"rating": 4.6,"total": 900},
+    "variants": ["Phantom Black","Cream","Green","Lavender"],
+    "shipping": "Free shipping, returns within 30 days.",
+    "compare": ["Samsung Galaxy S23","Samsung Galaxy S22 Ultra"]
+  },
+  {
+    "id": "3",
+    "name": "Google Pixel 8 Pro – 12GB – Obsidian",
+    "images": ["/images/pixel8pro1.jpg","/images/pixel8pro2.jpg"],
+    "price": 999.99,
+    "original_price": 1099.99,
+    "description": "Pixel 8 Pro with Tensor G3, AI camera features, and 6.7-inch OLED display.",
+    "specs": {
+      "Display": "6.7-inch OLED",
+      "Processor": "Google Tensor G3",
+      "RAM": "12GB",
+      "Storage": "256GB",
+      "Camera": "50MP triple system",
+      "Battery": "5000mAh",
+      "OS": "Android 14",
+      "Build": "Aluminum and Gorilla Glass"
+    },
+    "reviews": {"rating": 4.4,"total": 800},
+    "variants": ["Obsidian","Porcelain","Sky Blue"],
+    "shipping": "Free shipping on orders over $50. Returns 30 days.",
+    "compare": ["Pixel 8","Pixel 7 Pro"]
+  },
+  {
+    "id": "4",
+    "name": "OnePlus 12 Pro – 16GB – Stellar Black",
+    "images": ["/images/oneplus12pro1.jpg","/images/oneplus12pro2.jpg"],
+    "price": 899.99,
+    "original_price": 999.99,
+    "description": "OnePlus 12 Pro with 16GB RAM, 512GB storage, 120Hz AMOLED display, and 100W fast charging.",
+    "specs": {
+      "Display": "6.7-inch AMOLED, 120Hz",
+      "Processor": "Snapdragon 8 Gen 2",
+      "RAM": "16GB",
+      "Storage": "512GB",
+      "Camera": "50MP triple camera",
+      "Battery": "5000mAh",
+      "OS": "Android 13",
+      "Build": "Aluminum frame with Gorilla Glass"
+    },
+    "reviews": {"rating": 4.5,"total": 700},
+    "variants": ["Stellar Black","Emerald Green","Aurora Silver"],
+    "shipping": "Free shipping, returns within 30 days.",
+    "compare": ["OnePlus 12","OnePlus 11"]
+  },
+  {
+    "id": "5",
+    "name": "Apple AirPods Pro 2",
+    "images": ["/images/airpodspro2_1.jpg","/images/airpodspro2_2.jpg"],
+    "price": 249.99,
+    "original_price": 279.99,
+    "description": "Noise-cancelling wireless earbuds with spatial audio.",
+    "specs": {
+      "Battery": "6 hours per charge, 30 hours with case",
+      "Connectivity": "Bluetooth 5.3",
+      "Water Resistance": "IPX4",
+      "Compatibility": "iOS devices"
+    },
+    "reviews": {"rating": 4.7,"total": 1500},
+    "variants": ["White"],
+    "shipping": "Free shipping, returns 30 days.",
+    "compare": ["AirPods Pro","AirPods 3rd Gen"]
+  },
+  {
+    "id": "6",
+    "name": "Samsung Galaxy Buds Pro",
+    "images": ["/images/galaxybudspro1.jpg","/images/galaxybudspro2.jpg"],
+    "price": 199.99,
+    "original_price": 229.99,
+    "description": "Premium wireless earbuds with active noise cancellation.",
+    "specs": {
+      "Battery": "28 hours total",
+      "Connectivity": "Bluetooth 5.3",
+      "Water Resistance": "IPX7",
+      "Compatibility": "Android and iOS"
+    },
+    "reviews": {"rating": 4.6,"total": 900},
+    "variants": ["Phantom Black","Silver"],
+    "shipping": "Free shipping, returns 30 days.",
+    "compare": ["Galaxy Buds 2","Galaxy Buds Live"]
+  },
+  {
+    "id": "7",
+    "name": "iPhone 15 Silicone Case",
+    "images": ["/images/iphonecase1.jpg","/images/iphonecase2.jpg"],
+    "price": 39.99,
+    "original_price": 49.99,
+    "description": "Protective silicone case for iPhone 15 with slim design.",
+    "specs": {
+      "Material": "Silicone",
+      "Compatibility": "iPhone 15 series",
+      "Colors": "Multiple"
+    },
+    "reviews": {"rating": 4.3,"total": 500},
+    "variants": ["Black","Blue","Red","White"],
+    "shipping": "Free shipping over $50, returns 30 days.",
+    "compare": ["iPhone 14 Case","iPhone 13 Case"]
+  },
+  {
+    "id": "8",
+    "name": "Wireless Charger Pad",
+    "images": ["/images/wirelesscharger1.jpg","/images/wirelesscharger2.jpg"],
+    "price": 49.99,
+    "original_price": 59.99,
+    "description": "Qi-certified fast wireless charger compatible with iPhone and Android.",
+    "specs": {
+      "Charging Speed": "15W Fast Charging",
+      "Compatibility": "Qi devices",
+      "LED Indicator": "Yes",
+      "Input": "USB-C"
+    },
+    "reviews": {"rating": 4.5,"total": 600},
+    "variants": ["Black","White"],
+    "shipping": "Free shipping, returns 30 days.",
+    "compare": ["Anker Wireless Charger","Samsung Wireless Charger"]
+  },
+  {
+    "id": "9",
+    "name": "Google Pixel 8",
+    "images": ["/images/pixel8_1.jpg","/images/pixel8_2.jpg"],
+    "price": 799.99,
+    "original_price": 899.99,
+    "description": "Pixel 8 with Tensor G3 chip, excellent AI camera, and OLED display.",
+    "specs": {
+      "Display": "6.2-inch OLED",
+      "Processor": "Google Tensor G3",
+      "RAM": "8GB",
+      "Storage": "128GB",
+      "Camera": "50MP dual system",
+      "Battery": "4355mAh",
+      "OS": "Android 14"
+    },
+    "reviews": {"rating": 4.4,"total": 700},
+    "variants": ["Obsidian","Porcelain"],
+    "shipping": "Free shipping, returns 30 days.",
+    "compare": ["Pixel 8 Pro","Pixel 7"]
+  },
+  {
+    "id": "10",
+    "name": "OnePlus 12",
+    "images": ["/images/oneplus12_1.jpg","/images/oneplus12_2.jpg"],
+    "price": 849.99,
+    "original_price": 949.99,
+    "description": "Flagship OnePlus smartphone with 120Hz AMOLED and fast charging.",
+    "specs": {
+      "Display": "6.7-inch AMOLED",
+      "Processor": "Snapdragon 8 Gen 2",
+      "RAM": "12GB",
+      "Storage": "256GB",
+      "Camera": "50MP triple camera",
+      "Battery": "5000mAh",
+      "OS": "Android 13"
+    },
+    "reviews": {"rating": 4.5,"total": 650},
+    "variants": ["Stellar Black","Aurora Silver"],
+    "shipping": "Free shipping, returns 30 days.",
+    "compare": ["OnePlus 12 Pro","OnePlus 11"]
+  }
+]
