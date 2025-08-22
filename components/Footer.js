@@ -1,4 +1,3 @@
-// components/Footer.jsx
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
@@ -9,7 +8,6 @@ export default function Footer() {
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         {/* Logo / Brand */}
         <div className="flex items-center mb-4 md:mb-0">
-         
           <h1 className="text-xl font-bold">
             <Link href="/">ElectroMart</Link>
           </h1>
@@ -25,13 +23,13 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="flex space-x-4 mb-4 md:mb-0">
-          <Link href="https://www.facebook.com" target="_blank" className="hover:text-blue-500">
+          <Link href="https://www.facebook.com/dhimana.caudhuri.2025/" target="_blank" className="hover:text-blue-500">
             <FaFacebookF size={18} />
           </Link>
-          <Link href="https://twitter.com" target="_blank" className="hover:text-blue-400">
+          <Link href="https://x.com/Dhyman2029" target="_blank" className="hover:text-blue-400">
             <FaTwitter size={18} />
           </Link>
-          <Link href="https://www.linkedin.com" target="_blank" className="hover:text-blue-700">
+          <Link href="https://www.linkedin.com/in/dhyman-ch/" target="_blank" className="hover:text-blue-700">
             <FaLinkedinIn size={18} />
           </Link>
         </div>

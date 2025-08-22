@@ -10,7 +10,7 @@ export default function ContactPage() {
           Contact Us
         </h1>
         <p className="text-gray-600 dark:text-gray-300 mb-8">
-          We'd love to hear from you! Reach out to us via the form below or connect through our social media.
+          We would love to hear from you! Reach out to us via the form below or connect through our social media.
         </p>
 
         <form className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md space-y-4">
