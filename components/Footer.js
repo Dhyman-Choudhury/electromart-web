@@ -1,4 +1,5 @@
 // components/Footer.jsx
+import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
@@ -7,7 +8,8 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white py-8 mt-auto">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         {/* Logo / Brand */}
-        <div className="mb-4 md:mb-0">
+        <div className="flex items-center mb-4 md:mb-0">
+         
           <h1 className="text-xl font-bold">
             <Link href="/">ElectroMart</Link>
           </h1>

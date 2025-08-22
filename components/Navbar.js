@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
 import { useSession, signIn, signOut } from "next-auth/react";
 
@@ -8,11 +9,20 @@ export default function Navbar() {
   const { data: session } = useSession();
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-md px-6 py-4 flex items-center justify-between">
+    <nav className="bg-[#F3E2D4] dark:bg-gray-900 shadow-md px-4 md:px-6 py-4 flex items-center justify-between">
       
       {/* Logo */}
-      <div className="text-2xl font-bold text-gray-800 dark:text-white">
-        <Link href="/">Electro<span className="text-[#113F67]">Mart</span></Link>
+      <div className="flex items-center text-2xl font-bold text-gray-800 dark:text-white">
+        <Image
+          src="/icon2.png"   // icon from public folder
+          alt="ElectroMart Logo"
+          width={62}         // adjust size as needed
+          height={62}
+          className="rounded"
+        />
+        <Link href="/">
+          Electro<span className="text-[#113F67]">Mart</span>
+        </Link>
       </div>
 
       {/* Navigation Links */}

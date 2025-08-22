@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="bg-gray-50 min-h-[70vh] flex items-center">
+    <section className="bg-gray-50 min-h-[70vh] flex items-center mb-6 px-4 md:px-6 py-5">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
         
         {/* Text Content */}
@@ -17,7 +17,7 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-black">
             Discover the Latest Electronics
           </h1>
           <p className="text-gray-600 mb-6">
