@@ -14,18 +14,18 @@ export default function ProductHighlights() {
     }, []);
 
     return (
-        <section className="py-12 px-6 max-w-7xl mx-auto ">
-            <h2 className="text-3xl font-bold mb-8 text-center">Featured Phones</h2>
+        <section className="py-12 px-6 w-11/12  mx-auto mb-6">
+            <h2 className="text-3xl font-bold mb-8 text-center text-white">Featured Phones</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {products.map(product => (
                     <div
                         key={product.id}
-                        className="bg-white rounded-lg shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1 flex flex-col"
+                        className="bg-white rounded-lg shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1 flex flex-col text-black"
                     >
                         {/* Image */}
-                        <div className="relative w-full h-60 flex-shrink-0">
+                        <div className="relative w-full h-70 flex-shrink-0">
                             <Image
-                                src={product.images[0]}
+                                src={product.images}
                                 alt={product.name}
                                 fill
                                 className="object-cover rounded-t-lg"

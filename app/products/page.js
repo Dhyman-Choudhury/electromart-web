@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Loader from "@/components/Loader";
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
@@ -10,6 +11,7 @@ export default function ProductList() {
   const [priceRange, setPriceRange] = useState([0, 1000000]);
   const [brands, setBrands] = useState([]);
   const [storages, setStorages] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -24,8 +26,12 @@ export default function ProductList() {
         const maxP = Math.max(...data.map((p) => p.price));
         setMaxPrice(maxP);
         setPriceRange([0, maxP]);
+        setLoading(false);
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        console.error(err);
+        setLoading(false);
+      });
   }, []);
 
   // Filter products
@@ -119,67 +125,70 @@ export default function ProductList() {
 
       {/* Product Grid */}
       <div className="flex-1">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {currentProducts.map((product) => (
-            <div
-              key={product.id}
-              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1 flex flex-col"
-            >
-              {/* Image */}
-              <div className="relative w-full h-60 flex-shrink-0">
-                <Image
-                  src={product.images[0]}
-                  alt={product.name}
-                  fill
-                  className="object-cover rounded-t-lg"
-                />
-              </div>
+        {loading ? (<Loader />) : (
+          <>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {currentProducts.map((product) => (
+                <div
+                  key={product.id}
+                  className="bg-white rounded-lg shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1 flex flex-col text-black"
+                >
+                  {/* Image */}
+                  <div className="relative h-96 flex-shrink-0">
+                    <Image
+                      src={product.images}
+                      alt={product.name}
+                      fill
+                      className="object-cover rounded-t-lg"
+                    />
+                  </div>
 
-              {/* Content */}
-              <div className="p-4 flex flex-col flex-1">
-                <div className="mb-4">
-                  <h2 className="text-lg font-semibold">{product.name}</h2>
-                  <p className="text-gray-500 text-sm mt-1 mb-2 line-clamp-3">
-                    {product.description}
-                  </p>
-                  <p className="text-blue-600 font-bold text-lg mb-2">
-                    ${product.price.toLocaleString()}{" "}
-                    <span className="line-through text-gray-400 text-sm">
-                      ${product.original_price.toLocaleString()}
-                    </span>
-                  </p>
+                  {/* Content */}
+                  <div className="p-4 flex flex-col flex-1">
+                    <div className="mb-4">
+                      <h2 className="text-lg font-semibold">{product.name}</h2>
+                      <p className="text-gray-500 text-sm mt-1 mb-2 line-clamp-3">
+                        {product.description}
+                      </p>
+                      <p className="text-blue-600 font-bold text-lg mb-2">
+                        ${product.price.toLocaleString()}{" "}
+                        <span className="line-through text-gray-400 text-sm">
+                          ${product.original_price.toLocaleString()}
+                        </span>
+                      </p>
+                    </div>
+
+                    {/* Button at the bottom */}
+                    <div className="mt-auto">
+                      <Link
+                        href={`/products/${product.id}`}
+                        className="block w-full text-center btn_primary py-2 rounded hover:bg-blue-700 transition"
+                      >
+                        See More
+                      </Link>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Button at the bottom */}
-                <div className="mt-auto">
-                  <Link
-                    href={`/products/${product.id}`}
-                    className="block w-full text-center btn_primary py-2 rounded hover:bg-blue-700 transition"
-                  >
-                    See More
-                  </Link>
-                </div>
-              </div>
+              ))}
             </div>
-
-          ))}
-        </div>
-
-        {/* Pagination */}
-        <div className="flex justify-center mt-6 gap-2">
-          {Array.from({ length: totalPages }, (_, i) => (
-            <button
-              key={i + 1}
-              onClick={() => paginate(i + 1)}
-              className={`px-4 py-2 rounded border ${currentPage === i + 1
-                  ? "bg-blue-600 text-white"
-                  : "bg-white text-gray-700"
-                }`}
-            >
-              {i + 1}
-            </button>
-          ))}
-        </div>
+            {/* Pagination */}
+            <div className="flex justify-center mt-6 gap-2">
+              {Array.from({ length: totalPages }, (_, i) => (
+                <button
+                  key={i + 1}
+                  onClick={() => paginate(i + 1)}
+                  className={`px-4 py-2 rounded border ${currentPage === i + 1
+                    ? "bg-blue-600 text-white"
+                    : "bg-white text-gray-700"
+                    }`}
+                >
+                  {i + 1}
+                </button>
+              ))}
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

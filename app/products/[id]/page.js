@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import Loader from "@/components/Loader";
 
 export default function ProductDetails() {
     const { id } = useParams();
@@ -18,21 +19,15 @@ export default function ProductDetails() {
             .catch((err) => console.error(err));
     }, [id]);
 
-    if (!product) return <p className="text-center mt-10">Loading...</p>;
+    if (!product) return <p className="text-center mt-10"><Loader></Loader></p>;
 
     return (
         <div className="p-6 max-w-5xl mx-auto">
             <h1 className="text-3xl font-bold mb-6">{product.name}</h1>
-
             {/* Images */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                {product.images.map((img, index) => (
-                    <div key={index} className="relative w-full h-96">
-                        <Image src={img} alt={product.name} fill className="object-contain rounded-lg" />
-                    </div>
-                ))}
+            <div className="relative w-full h-96">
+                <Image src={product.images} alt={product.name} fill className="object-contain rounded-lg" />
             </div>
-
             {/* Price */}
             <p className="text-2xl text-blue-600 font-bold mb-4">
                 ${product.price.toFixed(2)}{" "}
@@ -45,7 +40,7 @@ export default function ProductDetails() {
             {/* Specifications */}
             <div className="mb-4">
                 <h2 className="text-xl font-semibold mb-2">Key Specifications</h2>
-                <ul className="list-disc list-inside text-gray-700">
+                <ul className="list-disc list-inside text-gray-600 ">
                     {Object.entries(product.specs).map(([key, value]) => (
                         <li key={key}><strong>{key}:</strong> {value}</li>
                     ))}

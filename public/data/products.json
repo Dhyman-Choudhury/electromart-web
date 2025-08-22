@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Apple iPhone 15 Pro Max – 256GB – Black Titanium",
-    "images": ["/images/iphone15pro1.jpg","/images/iphone15pro2.jpg","/images/iphone15pro3.jpg"],
+    "images": "/images/iphone.webp",
     "price": 1099.99,
     "original_price": 1199.99,
     "description": "iPhone 15 Pro Max with 6.7-inch Super Retina XDR display, A17 Pro chip, and advanced triple-camera system.",
@@ -24,7 +24,7 @@
   {
     "id": "2",
     "name": "Samsung Galaxy S23 Ultra – 12GB – Phantom Black",
-    "images": ["/images/galaxyS23ultra1.jpg","/images/galaxyS23ultra2.jpg"],
+    "images": "/images/galaxy s24 ultra.webp",
     "price": 1099.99,
     "original_price": 1199.99,
     "description": "High-end Android smartphone with S-Pen, Snapdragon 8 Gen 2, and 200MP camera system.",
@@ -46,7 +46,7 @@
   {
     "id": "3",
     "name": "Google Pixel 8 Pro – 12GB – Obsidian",
-    "images": ["/images/pixel8pro1.jpg","/images/pixel8pro2.jpg"],
+    "images": "/images/pixel-8-pro-01-500x500.jpg",
     "price": 999.99,
     "original_price": 1099.99,
     "description": "Pixel 8 Pro with Tensor G3, AI camera features, and 6.7-inch OLED display.",
@@ -68,7 +68,7 @@
   {
     "id": "4",
     "name": "OnePlus 12 Pro – 16GB – Stellar Black",
-    "images": ["/images/oneplus12pro1.jpg","/images/oneplus12pro2.jpg"],
+    "images": "/images/OnePlus-12-pro.webp",
     "price": 899.99,
     "original_price": 999.99,
     "description": "OnePlus 12 Pro with 16GB RAM, 512GB storage, 120Hz AMOLED display, and 100W fast charging.",
@@ -90,7 +90,7 @@
   {
     "id": "5",
     "name": "Apple AirPods Pro 2",
-    "images": ["/images/airpodspro2_1.jpg","/images/airpodspro2_2.jpg"],
+    "images": "/images/AirPods.jpeg",
     "price": 249.99,
     "original_price": 279.99,
     "description": "Noise-cancelling wireless earbuds with spatial audio.",
@@ -108,7 +108,7 @@
   {
     "id": "6",
     "name": "Samsung Galaxy Buds Pro",
-    "images": ["/images/galaxybudspro1.jpg","/images/galaxybudspro2.jpg"],
+    "images": "/images/Samsung Galaxy Buds Pro.jpg",
     "price": 199.99,
     "original_price": 229.99,
     "description": "Premium wireless earbuds with active noise cancellation.",
@@ -126,7 +126,7 @@
   {
     "id": "7",
     "name": "iPhone 15 Silicone Case",
-    "images": ["/images/iphonecase1.jpg","/images/iphonecase2.jpg"],
+    "images": "/images/iPhone 15 Silicone Case.jpg",
     "price": 39.99,
     "original_price": 49.99,
     "description": "Protective silicone case for iPhone 15 with slim design.",
@@ -143,7 +143,7 @@
   {
     "id": "8",
     "name": "Wireless Charger Pad",
-    "images": ["/images/wirelesscharger1.jpg","/images/wirelesscharger2.jpg"],
+    "images": "/images/Wireless Charger Pad.jpg",
     "price": 49.99,
     "original_price": 59.99,
     "description": "Qi-certified fast wireless charger compatible with iPhone and Android.",
@@ -161,7 +161,7 @@
   {
     "id": "9",
     "name": "Google Pixel 8",
-    "images": ["/images/pixel8_1.jpg","/images/pixel8_2.jpg"],
+    "images": "/images/pixel-8.jpeg",
     "price": 799.99,
     "original_price": 899.99,
     "description": "Pixel 8 with Tensor G3 chip, excellent AI camera, and OLED display.",
@@ -182,7 +182,7 @@
   {
     "id": "10",
     "name": "OnePlus 12",
-    "images": ["/images/oneplus12_1.jpg","/images/oneplus12_2.jpg"],
+    "images": "/images/oneplus-12.png",
     "price": 849.99,
     "original_price": 949.99,
     "description": "Flagship OnePlus smartphone with 120Hz AMOLED and fast charging.",
