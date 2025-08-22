@@ -1,4 +1,3 @@
-hero
 // components/Hero.jsx
 "use client";
 
