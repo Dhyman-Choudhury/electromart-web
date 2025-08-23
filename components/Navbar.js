@@ -9,14 +9,14 @@ export default function Navbar() {
   const { data: session } = useSession();
 
   return (
-    <nav className="bg-[#F3E2D4] dark:bg-gray-900 shadow-md px-4 md:px-6 py-4 flex items-center justify-between">
+    <nav className="sticky top-0 z-50 bg-[#F3E2D4] dark:bg-gray-900 shadow-md px-4 md:px-6 py-4 flex items-center justify-between">
       
       {/* Logo */}
       <div className="flex items-center text-2xl font-bold text-gray-800 dark:text-white">
         <Image
-          src="/icon2.png"   // icon from public folder
+          src="/icon2.png"
           alt="ElectroMart Logo"
-          width={62}         // adjust size as needed
+          width={62}
           height={62}
           className="rounded"
         />
@@ -39,6 +39,16 @@ export default function Navbar() {
         >
           Products
         </Link>
+
+        {/* Dashboard Link – Only if logged in */}
+        {session && (
+          <Link
+            href="/dashboard"
+            className="text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 transition"
+          >
+            Dashboard
+          </Link>
+        )}
 
         {/* Toggle Login / Logout */}
         {!session ? (

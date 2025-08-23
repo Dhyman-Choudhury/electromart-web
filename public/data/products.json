@@ -16,10 +16,21 @@
       "OS": "iOS 17",
       "Build": "Titanium frame with Ceramic Shield"
     },
-    "reviews": {"rating": 4.5,"total": 1200},
-    "variants": ["Black Titanium","Blue Titanium","Natural Titanium","White Titanium"],
+    "reviews": {
+      "rating": 4.5,
+      "total": 1200
+    },
+    "variants": [
+      "Black Titanium",
+      "Blue Titanium",
+      "Natural Titanium",
+      "White Titanium"
+    ],
     "shipping": "Free standard shipping on orders over $50. Returns within 30 days.",
-    "compare": ["iPhone 15 Pro","iPhone 14 Pro Max"]
+    "compare": [
+      "iPhone 15 Pro",
+      "iPhone 14 Pro Max"
+    ]
   },
   {
     "id": "2",
@@ -38,10 +49,21 @@
       "OS": "Android 13",
       "Build": "Aluminum frame with Gorilla Glass"
     },
-    "reviews": {"rating": 4.6,"total": 900},
-    "variants": ["Phantom Black","Cream","Green","Lavender"],
+    "reviews": {
+      "rating": 4.6,
+      "total": 900
+    },
+    "variants": [
+      "Phantom Black",
+      "Cream",
+      "Green",
+      "Lavender"
+    ],
     "shipping": "Free shipping, returns within 30 days.",
-    "compare": ["Samsung Galaxy S23","Samsung Galaxy S22 Ultra"]
+    "compare": [
+      "Samsung Galaxy S23",
+      "Samsung Galaxy S22 Ultra"
+    ]
   },
   {
     "id": "3",
@@ -60,10 +82,20 @@
       "OS": "Android 14",
       "Build": "Aluminum and Gorilla Glass"
     },
-    "reviews": {"rating": 4.4,"total": 800},
-    "variants": ["Obsidian","Porcelain","Sky Blue"],
+    "reviews": {
+      "rating": 4.4,
+      "total": 800
+    },
+    "variants": [
+      "Obsidian",
+      "Porcelain",
+      "Sky Blue"
+    ],
     "shipping": "Free shipping on orders over $50. Returns 30 days.",
-    "compare": ["Pixel 8","Pixel 7 Pro"]
+    "compare": [
+      "Pixel 8",
+      "Pixel 7 Pro"
+    ]
   },
   {
     "id": "4",
@@ -82,10 +114,20 @@
       "OS": "Android 13",
       "Build": "Aluminum frame with Gorilla Glass"
     },
-    "reviews": {"rating": 4.5,"total": 700},
-    "variants": ["Stellar Black","Emerald Green","Aurora Silver"],
+    "reviews": {
+      "rating": 4.5,
+      "total": 700
+    },
+    "variants": [
+      "Stellar Black",
+      "Emerald Green",
+      "Aurora Silver"
+    ],
     "shipping": "Free shipping, returns within 30 days.",
-    "compare": ["OnePlus 12","OnePlus 11"]
+    "compare": [
+      "OnePlus 12",
+      "OnePlus 11"
+    ]
   },
   {
     "id": "5",
@@ -100,10 +142,18 @@
       "Water Resistance": "IPX4",
       "Compatibility": "iOS devices"
     },
-    "reviews": {"rating": 4.7,"total": 1500},
-    "variants": ["White"],
+    "reviews": {
+      "rating": 4.7,
+      "total": 1500
+    },
+    "variants": [
+      "White"
+    ],
     "shipping": "Free shipping, returns 30 days.",
-    "compare": ["AirPods Pro","AirPods 3rd Gen"]
+    "compare": [
+      "AirPods Pro",
+      "AirPods 3rd Gen"
+    ]
   },
   {
     "id": "6",
@@ -118,10 +168,19 @@
       "Water Resistance": "IPX7",
       "Compatibility": "Android and iOS"
     },
-    "reviews": {"rating": 4.6,"total": 900},
-    "variants": ["Phantom Black","Silver"],
+    "reviews": {
+      "rating": 4.6,
+      "total": 900
+    },
+    "variants": [
+      "Phantom Black",
+      "Silver"
+    ],
     "shipping": "Free shipping, returns 30 days.",
-    "compare": ["Galaxy Buds 2","Galaxy Buds Live"]
+    "compare": [
+      "Galaxy Buds 2",
+      "Galaxy Buds Live"
+    ]
   },
   {
     "id": "7",
@@ -135,10 +194,21 @@
       "Compatibility": "iPhone 15 series",
       "Colors": "Multiple"
     },
-    "reviews": {"rating": 4.3,"total": 500},
-    "variants": ["Black","Blue","Red","White"],
+    "reviews": {
+      "rating": 4.3,
+      "total": 500
+    },
+    "variants": [
+      "Black",
+      "Blue",
+      "Red",
+      "White"
+    ],
     "shipping": "Free shipping over $50, returns 30 days.",
-    "compare": ["iPhone 14 Case","iPhone 13 Case"]
+    "compare": [
+      "iPhone 14 Case",
+      "iPhone 13 Case"
+    ]
   },
   {
     "id": "8",
@@ -153,10 +223,19 @@
       "LED Indicator": "Yes",
       "Input": "USB-C"
     },
-    "reviews": {"rating": 4.5,"total": 600},
-    "variants": ["Black","White"],
+    "reviews": {
+      "rating": 4.5,
+      "total": 600
+    },
+    "variants": [
+      "Black",
+      "White"
+    ],
     "shipping": "Free shipping, returns 30 days.",
-    "compare": ["Anker Wireless Charger","Samsung Wireless Charger"]
+    "compare": [
+      "Anker Wireless Charger",
+      "Samsung Wireless Charger"
+    ]
   },
   {
     "id": "9",
@@ -174,10 +253,19 @@
       "Battery": "4355mAh",
       "OS": "Android 14"
     },
-    "reviews": {"rating": 4.4,"total": 700},
-    "variants": ["Obsidian","Porcelain"],
+    "reviews": {
+      "rating": 4.4,
+      "total": 700
+    },
+    "variants": [
+      "Obsidian",
+      "Porcelain"
+    ],
     "shipping": "Free shipping, returns 30 days.",
-    "compare": ["Pixel 8 Pro","Pixel 7"]
+    "compare": [
+      "Pixel 8 Pro",
+      "Pixel 7"
+    ]
   },
   {
     "id": "10",
@@ -195,9 +283,40 @@
       "Battery": "5000mAh",
       "OS": "Android 13"
     },
-    "reviews": {"rating": 4.5,"total": 650},
-    "variants": ["Stellar Black","Aurora Silver"],
+    "reviews": {
+      "rating": 4.5,
+      "total": 650
+    },
+    "variants": [
+      "Stellar Black",
+      "Aurora Silver"
+    ],
     "shipping": "Free shipping, returns 30 days.",
-    "compare": ["OnePlus 12 Pro","OnePlus 11"]
+    "compare": [
+      "OnePlus 12 Pro",
+      "OnePlus 11"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Ciara Mcmillan",
+    "description": "Eos non ratione accu",
+    "price": 418,
+    "original_price": 587,
+    "imageURL": "https://www.pchouse.com.bd/image/cache/catalog/111A/1323/apple-ipad-air-64gb-600x500h.jpg.webp",
+    "shipping": "Delectus debitis ex",
+    "specs": {
+      "Dolor proident null": "At dolore possimus "
+    },
+    "reviews": {
+      "rating": 82,
+      "total": 56
+    },
+    "variants": [
+      "Eveniet iste aliqui"
+    ],
+    "compare": [
+      "Delectus facere mol"
+    ]
   }
 ]

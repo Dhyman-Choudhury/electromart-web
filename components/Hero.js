@@ -40,7 +40,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <Image
-            src="/hero2.jpg"
+            src="/hero.webp"
             alt="Electronics Products"
             width={600}  // adjust size according to your layout
             height={600} // adjust size according to your layout

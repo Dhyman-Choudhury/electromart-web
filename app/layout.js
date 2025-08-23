@@ -5,11 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "ElectroMart",
-  icons: {
-    icon: "/icon2.png",
-    shortcut: "/icon2.png",
-    apple: "/icon2.png",
-  },
+  icons: { icon: "/icon2.png" },
 };
 
 export default function RootLayout({ children }) {
@@ -17,9 +13,9 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen flex flex-col">
         <Providers>
-          <Navbar />
+         
           <main className="flex-1">{children}</main>
-          <Footer />
+          
         </Providers>
       </body>
     </html>

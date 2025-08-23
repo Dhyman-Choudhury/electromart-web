@@ -14,8 +14,8 @@ export default function ProductHighlights() {
     }, []);
 
     return (
-        <section className="py-12 px-6 w-11/12  mx-auto mb-6">
-            <h2 className="text-3xl font-bold mb-8 text-center text-white">Featured Phones</h2>
+        <section className="py-12 px-6 w-11/12 bg-gray-100 mx-auto mb-6">
+            <h2 className="text-3xl font-bold mb-8 text-center text-black">Featured Phones</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {products.map(product => (
                     <div

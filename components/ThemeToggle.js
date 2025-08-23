@@ -1,8 +1,23 @@
 "use client";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);  // Ensure this runs only on client
+  }, []);
+
+  if (!mounted) {
+    // Prevent hydration mismatch by rendering a static button first
+    return (
+      <button className="px-3 py-2 rounded-md bg-gray-200 dark:bg-gray-700">
+        ...
+      </button>
+    );
+  }
 
   return (
     <button
