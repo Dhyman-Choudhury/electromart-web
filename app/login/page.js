@@ -2,10 +2,11 @@
 
 import { signIn } from "next-auth/react";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function LoginPage() {
+function LoginContent() {
   const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get("callbackUrl") || "/products"; // fallback
+  const callbackUrl = searchParams.get("callbackUrl") || "/products";
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
@@ -29,5 +30,13 @@ export default function LoginPage() {
         Sign in as Admin
       </button>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={<p>Loading...</p>}>
+      <LoginContent />
+    </Suspense>
   );
 }
