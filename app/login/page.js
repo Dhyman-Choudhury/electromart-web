@@ -8,7 +8,7 @@ export default function LoginPage() {
   const callbackUrl = searchParams.get("callbackUrl") || "/products"; // fallback
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-96 h-96 shadow-2xl">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 w-96 h-96 shadow-2xl">
       <h1 className="text-2xl font-bold mb-4">Login</h1>
 
       {/* Google Login */}
